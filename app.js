@@ -18,8 +18,7 @@ document.addEventListener('change', event => {
   // console.dir(event.target.value)
   // console.log(window.location.pathname + '/?' + event.target.value)
   window.history.pushState(null, '', window.location.pathname + '?' + document.querySelector('#color').value + '+' + document.querySelector('#size').value)
-  // window.location.replace(window.location.pathname + '/?' + event.target.value)
-  // route()
+  route()
 })
 
 function route () {
