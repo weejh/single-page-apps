@@ -16,9 +16,16 @@ document.addEventListener('click', event => {
 
 document.addEventListener('change', event => {
   // console.dir(event.target.value)
-  // console.log(window.location.pathname + '/?' + event.target.value)
-  window.history.pushState(null, '', window.location.pathname + '?' + document.querySelector('#color').value + '+' + document.querySelector('#size').value)
-  route()
+  // console.log(window.location.pathname)
+  if (window.location.pathname === '/products') {
+    window.history.replaceState(null, '', window.location.pathname + '?' + document.querySelector('#color').value + '+' + document.querySelector('#size').value)
+  }
+  if (window.location.pathname === '/about') {
+      // console.log(window.location.pathname)
+      // console.log(document.querySelector('#group').value)
+    window.history.replaceState(null, '', window.location.pathname + '?' + document.querySelector('#group').value)
+  }
+  // route()
 })
 
 function route () {
