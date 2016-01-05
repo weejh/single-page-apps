@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "tape test/*.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "mkdir -p dist && browserify app.js --outfile dist/app.js && node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -13,21 +14,22 @@
     "express-history-api-fallback": "^2.0.0",
     "http-server": "^0.8.5",
     "nodemon": "^1.8.1",
+    "spa-route": "^1.1.0",
     "standard": "^5.4.1",
     "tape": "^4.2.2",
     "testling": "^1.7.1"
   },
   "testling": {
-   "files": "test/*.js",
-   "browsers": [
-     "ie/6..latest",
-     "chrome/22..latest",
-     "firefox/16..latest",
-     "safari/latest",
-     "opera/11.0..latest",
-     "iphone/6",
-     "ipad/6",
-     "android-browser/latest"
-   ]
- }
+    "files": "test/*.js",
+    "browsers": [
+      "ie/6..latest",
+      "chrome/22..latest",
+      "firefox/16..latest",
+      "safari/latest",
+      "opera/11.0..latest",
+      "iphone/6",
+      "ipad/6",
+      "android-browser/latest"
+    ]
+  }
 }
