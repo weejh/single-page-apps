@@ -1,24 +1,25 @@
 
 var Router = require('spa-route')
-
-var router = new Router([
-  {
-    route: /^\/$/,
-    title: 'Homepage',
-    element: '#landing'
-  },
-  {
-    route: /^\/about/,
-    title: 'About Us',
-    element: '#about'
-  },
-  {
-    route: /^\/products/,
-    title: 'products',
-    element: '#products'
-  },
-  {
-    route: /^$/,
-    element: '#error404'
-  }
-])
+var routes = require('./routes')
+var router = new Router(routes)
+// var router = new Router([
+//   {
+//     route: /^\/$/,
+//     title: 'Homepage',
+//     element: '#landing'
+//   },
+//   {
+//     route: /^\/about$/,
+//     title: 'About Us',
+//     element: '#about'
+//   },
+//   {
+//     route: /^\/products$/,
+//     title: 'products',
+//     element: '#products'
+//   },
+//   {
+//     route: /^$/,
+//     element: '#error404'
+//   }
+// ])
