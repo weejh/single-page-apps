@@ -1,7 +1,11 @@
 
-var Router = require('spa-route')
-var routes = require('./routes')
+import Router from 'spa-route'
+import routes from './routes'
 var router = new Router(routes)
+export default router
+// var Router = require('spa-route')
+// var routes = require('./routes')
+// var router = new Router(routes)
 // var router = new Router([
 //   {
 //     route: /^\/$/,
