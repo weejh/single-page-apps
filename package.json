@@ -16,7 +16,7 @@
     "express-history-api-fallback": "^2.0.0",
     "http-server": "^0.8.5",
     "nodemon": "^1.8.1",
-    "spa-route": "^4.0.0",
+    "spa-route": "^5.0.0",
     "standard": "^5.4.1",
     "tape": "^4.2.2",
     "testling": "^1.7.1",
